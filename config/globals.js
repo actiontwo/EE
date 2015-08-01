@@ -8,6 +8,7 @@
  * For more information on configuration, check out:
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.globals.html
  */
+bcrypt = require('bcrypt-nodejs');
 module.exports.globals = {
 
   /****************************************************************************
@@ -28,7 +29,8 @@ module.exports.globals = {
   *                                                                           *
   ****************************************************************************/
 
-	// async: true,
+	async: true,
+  bcrypt: true
 
   /****************************************************************************
   *                                                                           *

@@ -13,6 +13,7 @@
  * For usage docs see:
  * 		https://github.com/gruntjs/grunt-contrib-copy
  */
+console.log (require('../pipeline').jsFilesToInject);
 module.exports = function(grunt) {
 
 	grunt.config.set('copy', {
@@ -24,6 +25,14 @@ module.exports = function(grunt) {
 				dest: '.tmp/public'
 			}]
 		},
+    bower: {
+      files: [{
+        expand: true,
+        cwd: './bower_components',
+        src: ['**/*'],
+        dest: '.tmp/public/bower_components'
+      }]
+    },
 		build: {
 			files: [{
 				expand: true,

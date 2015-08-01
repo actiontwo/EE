@@ -1,0 +1,43 @@
+extends ../layout
+
+
+block body
+  div.page-header
+    h1#nav Grammar in use
+
+  div.row
+    each grammar in [1,2,3,5,6,7]
+      div.col-md-4
+        h3 Example body text #{grammar}
+        p Nullam quis risus eget
+          a(href='#') &nbspurna mollis ornare
+          | vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+          br
+          a.pull-right.text-success(href='#') Read more...
+
+
+  div.page-header
+    h1#nav Articles
+
+  div.row
+    each article in [1,2,3,5,6,7]
+      div.col-md-4
+        h3 Example body text #{article}
+        p Nullam quis risus eget
+          a(href='#') &nbspurna mollis ornare
+          | vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+          br
+          a.pull-right.text-success(href='#') Read more...
+
+  div.page-header
+    h1#nav English Tips
+
+  div.row
+    each english_tip in [1,2,3,5,6,7]
+      div.col-md-4
+        h3 Example body text #{english_tips}
+        p Nullam quis risus eget
+          a(href='#') &nbspurna mollis ornare
+          | vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+          br
+          a.pull-right.text-success(href='#') Read more...
